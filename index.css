@@ -5,7 +5,8 @@
 .container{
     display: grid;
     grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 15vw 100% 10vw;
+    grid-template-rows: 15vw 100vw 10vw;
+    
 }
 .header{
     grid-column: span 2;
@@ -22,14 +23,29 @@
     display: grid;
     grid-template-columns: 0.2fr 1fr;
     /* justify-items: stretch; */
+    
 }
 .menu{
     background-color: antiquewhite;
 }
 .main{
     background-color: blueviolet;
+    /* align-content: stretch; */
 }
 .footer{
     grid-column: span 2;
     background-color: blue;
+}
+
+@media (min-width:320px) and (max-width:800px){
+    .center{
+        grid-template-rows: 0.1fr 2fr;
+    }
+    .menu{
+        grid-column: span 2;
+        height: fit-content;
+    }
+    .main{
+        grid-column: span 2;
+    }
 }
