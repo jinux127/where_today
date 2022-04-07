@@ -1,0 +1,35 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 15vw 100% 10vw;
+}
+.header{
+    grid-column: span 2;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    height: 100%;
+    width: 100%;
+    grid-column: span 2;
+
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    /* justify-items: stretch; */
+}
+.menu{
+    background-color: antiquewhite;
+}
+.main{
+    background-color: blueviolet;
+}
+.footer{
+    grid-column: span 2;
+    background-color: blue;
+}
